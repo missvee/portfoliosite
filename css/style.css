@@ -1,0 +1,104 @@
+/* Custom Stylesheet */
+body, html {
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+      background: #fff;
+      text-align: center;
+      height: 100%;
+}
+
+body .header{
+  color: #7AC5BF;
+}
+
+.container {
+  float: left;
+  width: 100%;
+}
+
+/* Required Stylesheets */
+.wheel-button {
+  position: relative;
+}
+
+.wheel {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 350px; 
+  height: 350px; 
+  visibility: hidden;
+  position: relative;
+  display: none;
+}
+
+.wheel li {
+  overflow: hidden;
+  float:left;
+}
+
+.wheel li a {
+  display: block;
+}
+
+/* DEMO #4 */
+
+#demo4 .main {
+  background: #fff;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 10px 25px;
+  position: relative;
+  height: 350px;
+}
+
+#demo4 .wheel-button {
+  position: absolute;
+  margin: 0;
+}
+
+#demo4 .wheel-button.sw {
+  top: 10px;
+  right: 10px;
+}
+
+#demo4 .wheel-button.ne {
+  bottom: 10px;
+  left: 10px;
+}
+
+#demo4 .wheel-button.se {
+  top: 10px;
+  left: 10px;
+}
+
+#demo4 .wheel-button.nw {
+  bottom: 10px;
+  right: 10px;
+}
+
+#demo4 .wheel-button.n {
+  bottom: 10px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+#demo4 .wheel-button.s {
+  top: 10px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+#demo4 .wheel-button.e {
+  left: 10px;
+  top: 50%;
+  margin-top: -20px;
+}
+
+#demo4 .wheel-button.w {
+  right: 10px;
+  top: 50%;
+  margin-top: -20px;
+}
