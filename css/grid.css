@@ -79,7 +79,7 @@ label{
   padding: 8px 15px;
   margin-bottom: 20px;
   display: block;
-  font: 100 22px "Helvetica Neue"; 
+  font: 100 22px "Gotham"; 
   border-left: 10px solid #922d8d;
 }
 
@@ -88,7 +88,7 @@ label:last-of-type{
 }
 
 p{
-  font: 200 15px/1.5em "Helvetica Neue";
+  font: 200 15px/1.5em "Gotham";
   max-width: 400px;
   margin-bottom: 30px;
   color: #333;

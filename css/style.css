@@ -11,8 +11,11 @@ body .header{
   color: #7AC5BF;
 }
 
+
+
 .container {
   float: left;
+  background: #fff;
   width: 100%;
 }
 
@@ -102,3 +105,4 @@ body .header{
   top: 50%;
   margin-top: -20px;
 }
+
