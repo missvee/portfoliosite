@@ -43,6 +43,7 @@
 		
 		<style type="text/css">
 			.quote {
+				display: none;
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -111,7 +112,7 @@
 			}
 			body {
 				background-color:#ffffff;}
-				p {color:#7AC5BF;}
+				p {color:#ffffff;}
 			}	
 			
 			@media screen and (max-width: 960px) {
@@ -314,7 +315,6 @@
 		    </div>
 		</div><!-- Container -->
 		
-	
 	<script type="text/javascript">
     $(".wheel-button").wheelmenu({
       trigger: "hover",
@@ -324,8 +324,17 @@
   	</script>
 		
 		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
 		<script>
-			$('.quote').fadeOut(2000);
+			$(function () {
+				var check = $.cookie('billboard');
+				console.log(check);
+				if (check == true) {
+				} else {
+					$('.quote').show().fadeOut(3000);
+					$.cookie('billboard', true, { expires: 7, path: '/'});
+				}
+			});
 		</script>
 		
 		
