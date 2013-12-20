@@ -332,13 +332,13 @@
 			$(function () {
 				var check = $.cookie('billboard');
 				console.log(check);
-				if (check == 'true') {
+				if (check == true) {
 				} else {
 					$('body').addClass('crop');
 					$('.quote').show().fadeOut(3000, function () {
 						$('body').removeClass('crop');
 					});
-					$.cookie('billboard', 'true', { expires: 7, path: '/'});
+					$.cookie('billboard', true, { expires: 7, path: '/'});
 				}
 			});
 		</script>
