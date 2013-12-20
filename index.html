@@ -42,9 +42,6 @@
 		
 		
 		<style type="text/css">
-			.crop {
-				overflow: hidden;
-			}
 			.quote {
 				display: none;
 				position: absolute;
@@ -334,10 +331,7 @@
 				console.log(check);
 				if (check == true) {
 				} else {
-					$('body').addClass('crop');
-					$('.quote').show().fadeOut(3000, function () {
-						$('body').removeClass('crop');
-					});
+					$('.quote').show().fadeOut(3000);
 					$.cookie('billboard', true, { expires: 7, path: '/'});
 				}
 			});
