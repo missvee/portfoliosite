@@ -11,8 +11,11 @@ body .header{
   color: #7AC5BF;
 }
 
+
+
 .container {
   float: left;
+  background: #fff;
   width: 100%;
 }
 
@@ -102,3 +105,26 @@ body .header{
   top: 50%;
   margin-top: -20px;
 }
+
+@media screen and (min-width: 480px) {
+				.overlay .content {
+					padding-top: 25px !important;
+				}
+			}
+			
+			@media screen and (min-width: 900px) {
+				.overlay .content {
+					padding-top: 100px !important;
+				}
+			}
+			
+			@media screen and (max-width: 480px) {
+				.overlay {
+					position: static;
+					display: block;
+				}
+				.overlay .content {
+					padding-top: 0;
+				}
+			}
+

@@ -25,6 +25,8 @@ body, html {
     -ms-text-size-adjust: 100%;
 }
 
+
+
 /* Font Icons */ 
 @font-face {
   font-family: 'oxp-demo';
@@ -57,7 +59,7 @@ body, html {
 body {
 	font-family: 'Roboto',Arial,sans-serif;
 	color: #fff;
-	background: #f8d135;
+	background: #fff;
 }
 
 a, a:visited {
@@ -93,20 +95,20 @@ h3 {
 	margin: 0 auto;
 	padding: 5px;
 	text-align: center;
-	background: rgba(0,0,0,0.01);
+	background: #fff;
 }
 
 .container .header span {
 	display: block;
 	font-size: 60%;
-	opacity: 0.8;
+	opacity: 0%;
 	padding-bottom: 0.6em;
 }
 
 /* To Navigation Style */
 .nav-top {
 	background: #fff;
-	background: rgba(255, 255, 255, 0.1);
+	background: #fff;
 	text-transform: uppercase;
 	width: 100%;
 	font-size: 0.65em;
@@ -207,6 +209,8 @@ h3 {
 #fusion_ad .powered {
 	font-size: 10px;
 }
+
+
 
 /* Responsive */
 @media screen and (max-width: 25em) {
