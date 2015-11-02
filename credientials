@@ -3,7 +3,7 @@
 <p>
 </p>
 	<head>
-		<title>MY STORY</title>
+		<title>CREDENTIALS</title>
 		
 			<html lang="en" class="no-js">
 	<head>
@@ -78,8 +78,16 @@
 	<body>
 		
 		<div class="header">
-		
-			<img src="images/about.png" height="auto">
+			<p>Virginia's work has been featured on AIGA Member Gallery and MICA Portfolios. She has received awards from Scholastic Art and Writing Awards, the National Foundation for Advancement in the Arts and School of the Art League. </p>
+			<p>A few of her clients include:</p>
+			<p><center><img src="images/clients.png"></center>
+			<p>"<i>Virginia is an extremely diligent and mindful designer. Able to come up with timely solutions to creative problems, she created efficiencies in graphics developments for a large scale mapping project. She is adept at interpreting complex ideas and communicating them in tight visual layouts. Her work ethic is admirable, and she was able to integrate beautifully with our team.</i> " </p>
+			<p>- Callie Peck, Executive Creative Director, Sideways Inc.</p>
+
+			<p>"<i>I had the pleasure of working closely with Virginia during out time at DreamIt Ventures. She is creative, proactive, responsible, diligent, and a great personality to have in the office. Although circumstances in the accelerator were tough -- tight deadlines, demanding and wishy-washy clients, limited resources -- Virginia handled every task deftly and with a smile.</i>"
+			<p>-Sharon Paley, Project Manager, Dreamit Ventures.</p>
+
+
 			<ul class="nav social-nav">
 				<li>
 				
