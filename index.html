@@ -1,246 +1,973 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>VIRGINIA YU</title>
-		
-		<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<meta name="description" content="A jQuery plugin that will allow you to add a customizable Path-like menu button to your website." />
-		<meta name="keywords" content="jQuery path like, jQuery wheel, wheel menu, wheel effect menu" />
-		<meta name="author" content="Author for Onextrapixel" />
-		<link rel="shortcut icon" href="../file/favicon.gif"> 
-		<link rel="stylesheet" type="text/css" href="css/default.css" />
-		
-		<!-- Edit Below -->
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	    <script type="text/javascript" src="js/jquery.wheelmenu.js"></script>
-	    <link rel="stylesheet" type="text/css" href="css/style.css" />
-	    <link href='css/elusive-webfont.css' rel='stylesheet' type='text/css'>
-	</head>
-	<body id="demo4">
-		<div class="container">
-			<!-- Top Navi -->
-		
-	     
-		<!-- Navigation -->
-	      <a href="#wheel2" class="wheel-button se">
-			   <img src="images/logo.png" width="200">
-			  </a>
-	      <ul id="wheel2" data-angle="SE" class="wheel">
-	        <li class="item"><a href="about.html"><img src="images/infoicon.png" width="50"></a></li>
-	        <li class="item"><a href="index.html"><img src="images/projects.png" width="50"></a></li>
-	        <li class="item"><a href="credentials.html" target="_blank"><img src="images/c.png" width="50"></a></li>
-		<li class="item"><a href="email.html" target="_blank"><img src="images/email.png" width="50"></a></li>
-	        <li class="item"><a href="http://www.linkedin.com/profile/view?id=138599920&authType=NAME_SEARCH&authToken=5qzr&locale=en_US&srchid=1385999201386885586266&srchindex=1&srchtotal=21&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A1385999201386885586266%2CVSRPtargetId%3A138599920%2CVSRPcmpt%3Aprimary" target="_blank"><img src="images/linkedin.png" width="50"></a></li>
-	      </ul>
-	     <!-- END NAVIGATION -->
-				
-		
-		
-		
-		<style type="text/css">
-			.quote {
-				display: none;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background: #000000;
-			}
-			.grid {
-				text-align: left;
-				list-style: none;
-				padding-bottom: 0px;
-				padding-top: 100px;
-				padding-left: 0px;
-				padding-right: 0px;
-			}
-			
-			.grid li {
-				position: relative;
-				display: inline-block;
-				width: 33%;
-				margin-bottom: 0px;
-				background: #ccc;
-			}
-			
-			.grid li:hover .overlay {
-				transition: background-color .1s ease-in;
-				-webkit-transition: background-color .1s ease-in;
-				background-color: rgba(0,0,0,0.50);
-			}
-			
-			.grid img {
-				display: block;
-				max-width: 100%;
-				width: 100%;
-				height: auto;
-			}
-			
-			.overlay {
-				transition-duration: 1s;
-				-webkit-transition-duration: 1s;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background-color: rgba(0,0,0,0.2);
-			}
-			
-			.overlay .content {
-				padding: 100px 0 0;
-				text-align: center;
-			}
-			
-			.grid:after {
-				content: "";
-				display: inline-block;
-				width: 100%;
-			}
-			
-			body {
-				width: 60%;
-				margin: 0 auto;
-				font-family: Helvetica, sans-serif;
-				font-size: 14px;
-				line-height: 1.8;
-			}
-			body {
-				background-color:#ffffff;}
-				p {color:#ffffff;}
-			}	
-			
-			@media screen and (max-width: 960px) {
-				.overlay .content {
-					padding-top: 25px;
-				}
-			}
-			
-			@media screen and (max-width: 480px) {
-				.overlay {
-					position: static;
-					display: block;
-				}
-				.overlay .content {
-					padding-top: 0;
-				}
-			}
+<html lang="en">
 
-		</style>
-	</head>
-	<body>
-		<ul class="grid">
-			<li>
-				<a href="sikker.html" style="color: #FFf">
-					<img src="images/sikker01.jpg" alt="placeholder">
-					<div class="overlay">
-					</div>
-				</a>
-			</li>
-			<li>
-			<a href="lebrut.html" style="color: #FFf">
-					<img src="images/lebrut.jpg" alt="placeholder">
-					<div class="overlay">
-					</div>
-					</a>
-						</li>
-			<li><a href="v1.html" style="color: #FFf">
-					<img src="images/v1.jpg" alt="placeholder">
-					<div class="overlay">
-					</div>
-			</a>
-							</li>
-			<li><a href="qc.html" style="color: #FFf">
-					<img src="images/qc.jpg" alt="placeholder">
-					<div class="overlay">
-					</div>
-			</a></li>
-			<li><a href="organize.html" style="color: #FFf">
-					<img src="images/organize.jpg" alt="placeholder">
-					<div class="overlay">
-					</div>
-			</a></li>
-			<li><a href="innovation.html" style="color: #FFf">
-					<img src="images/innovation.jpg" alt="placeholder">
-					<div class="overlay">
-					</div>
-			</a></li>
-			<li><a href="time.html" style="color: #FFf">
-					<img src="images/timeinc.jpg" alt="placeholder">
-					<div class="overlay">
-					</div>
-			</a></li>
-			<li><a href="free.html" style="color: #FFf">
-					<img src="images/free.jpg" alt="placeholder">
-					<div class="overlay">
-					</div>
-			</a></li>
-			<li><a href="placeiq.html" style="color: #FFf">
-					<img src="images/placeiq.jpg" alt="placeholder">
-					<div class="overlay">
-					</div>
-			</a></li>
-			<li><a href="spices.html" style="color: #FFf">
-					<img src="images/celestial.jpg" alt="placeholder">
-					<div class="overlay">
-					</div>
-			</a></li>
-			<li><a href="cloud.html" style="color: #FFf">
-					<img src="images/cloud9.png" alt="placeholder">
-					<div class="overlay">
-					</div>
-			</a></li>
-			<li><a href="magasin.html" style="color: #FFf">
-					<img src="images/magasin.jpg" alt="placeholder">
-					<div class="overlay">
-					</div>
-			</a></li>
-			<li><a href="weekend.html" style="color: #FFf">
-					<img src="images/weekend.jpg" alt="placeholder">
-					<div class="overlay">
-					</div>
-			</a></li>
-			<li><a href="100.html" style="color: #FFf">
-					<img src="images/100.jpg" alt="placeholder">
-					<div class="overlay">
-					</div>
-			</a></li>
-			<li><a href="denmark.html" style="color: #FFf">
-					<img src="images/denmark.jpg" alt="placeholder">
-					<div class="overlay">
-					</div>
-			</a></li>
-						</div>
-					</div>
-			</a></li>
-		
-	<script type="text/javascript">
-    $(".wheel-button").wheelmenu({
-      trigger: "hover",
-      animation: "fly",
-      angle: "NW"
-    });
-  	</script>
-		
-		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-		<script src="js/jquery.cookie.js"></script>
-		<script>
-			$(function () {
-				var check = $.cookie('billboard');
-				console.log(check);
-				if (check == true) {
-				} else {
-					$('.quote').show().fadeOut(3000);
-					$.cookie('billboard', true, { expires: 7, path: '/'});
-				}
-			});
-		</script>
-		
-		
-		<center><p>ALL WORKS © VIRGINIA YU.</p></center>
-	</body>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>VIRGINIA YU</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Hello</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" alt="">
+                    <div class="intro-text">
+                        <span class="name">Virginia Yu</span>
+                        <hr class="star-light">
+                        <span class="skills">designer- maker - thinker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/sikker5.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/lebrut07a.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/v1front.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/qc-front.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/o2b.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/in1.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/time6.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/free0.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/placeiq0.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/spices.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cloud1.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/magasin00.png" class="img-responsive" alt="">
+                    </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal13" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/calendar00.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal14" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/1001.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal15" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/d.png" class="img-responsive" alt="">
+                    </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Virginia has experience working in branding 
+identity, digital advertising and technology 
+startups across America and Denmark. She
+has a varied skillset in print, web and UI/UX.  </p>
+<p>Her work has been featured on AIGA Member Gallery and MICA Portfolios. She has received awards from Scholastic Art and Writing Awards, the National Foundation for Advancement in the Arts and School of the Art League.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>She has worked with a variety of clients both big and small.
+
+A few of her clients include: </p><p>Brandtuitive, 
+Fiaba Creative, 
+Humanscale Design, 
+IDEO, 
+Jennergy, 
+Macy's, 
+MTV, 
+PlaceIQ, 
+Skift, 
+Sideways NYC, 
+Time Inc, 
+Thinkso, 
+Vaynermedia</p>
+<p>When Virginia is not designing she is traveling around the globe or perfecting her handlettering. 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                
+                                <a href="http://www.behance.net/missyu" class="btn-social btn-outline"><i class="fa fa-fw fa-behance"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://www.linkedin.com/profile/view?id=138599920&authType=NAME_SEARCH&authToken=5qzr&locale=en_US&srchid=1385999201386885586266&srchindex=1&srchtotal=21&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A1385999201386885586266%2CVSRPtargetId%3A138599920%2CVSRPcmpt%3Aprimary" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; VIRGINIA YU
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>sikker</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/sikker01.jpg" class="img-responsive img-centered" alt="">
+                            <p>A branding proposal for an asylum center in Copenhagen, Denmark. SIKKER is a center designed to aid refugees seeking asylum in Copenhagen. It provides Danish classes and a bike share to help residents assimilate to their new environment.</p>
+                            <img src="img/portfolio/sikker2.jpg" class="img-responsive img-centered" alt="">
+                               <img src="img/portfolio/sikker3.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/sikker4.jpg" class="img-responsive img-centered" alt="">
+                            <p>The chosen colors of red and white represent the Danish flag. It serves as a soft introductory into the nation's colors.</p>
+                               <img src="img/portfolio/sikker5.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/sikker6.jpg" class="img-responsive img-centered" alt="">
+                               <img src="img/portfolio/sikker7.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/sikker8.jpg" class="img-responsive img-centered" alt="">
+                               <img src="img/portfolio/sikker11.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/sikker10.jpg" class="img-responsive img-centered" alt="">
+                               <img src="img/portfolio/sikker9.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/sikker12.jpg" class="img-responsive img-centered" alt="">
+                            
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>le brut</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/lebrut01.jpg" class="img-responsive img-centered" alt="">
+                            <p>Le Brut is a French inspired, paleo based restaurant situated in the heart of SoHo.</p>
+                            <img src="img/portfolio/lebrut02.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut03.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut04.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut05.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut06.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut07.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut08.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut09.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut10.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut11.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut12.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut13.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut14.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut15.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut16.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut17.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut18.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut19.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut20.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut21.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut22.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut23.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut24.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut26.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut27.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut25.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut.gif" class="img-responsive img-centered" alt="">
+                            <p>These are the architectural plans and elevations of Le Brut. The interior will be mostly gray and beige with modern furniture. The overall capacity of the restaurant will hold 55 people. The bar will serve juices and smoothies during the day and alcohol at night.</p>
+                            <img src="img/portfolio/lebrut28.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut30.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut31.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/lebrut29.png" class="img-responsive img-centered" alt="">
+
+                  
+           
+                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>v1 gallery</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/v1.jpg" class="img-responsive img-centered" alt="">
+                            <p>V1 Gallery is an art space located in the meatpacking district of Copenhagen, Denmark. The gallery showcases emerging and established artists. Not only is the work presented to locals but to an international audience as well.</p>
+                            <p>
+                            <p><i>"V1 gallery is proud to present contemporary and cutting edge art to the Danish public."</i></p>
+                            <img src="img/portfolio/v12.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/v13.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/v14.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/v15.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/v16.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/v17.png" class="img-responsive img-centered" alt="">
+                            <p>I used the logo in the promotional posters for upcoming shows. Instead of showing the entire artwork, I decided to use the logo as a " peekhole " into the gallery's artwork in order to stir more interest from the viewing audience. Since the art seemed very contemporary and the audience is mostly those from the younger generation, I decided to go for a young and hip appearance.</p>
+
+                            <img src="img/portfolio/v18.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/v19.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/v20.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/v21.png" class="img-responsive img-centered" alt="">
+               
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Quantify Care</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/qc.png" class="img-responsive img-centered" alt="">
+                            <p>Quantified Care is a mobile health start up. They are committed to helping clinicians and their patients learn about and adopt evidence-based mobile medical apps and devices that have the potential to improve quality of care while lowering costs. Our mission is to bring these cutting-edge tools to a variety of clinical settings, from home health care to concierge medicine to global health.</p>
+                            <img src="img/portfolio/qc1.png" class="img-responsive img-centered" alt="">
+                            <p>
+			<p>I began my branding process with the following list of words that Quantified Care associated with.</p>
+			<p>
+			<p>Technical</p>
+			<p>Connections (Patients to Providers)</p>
+			<P>New/Unconventional</p>
+			<P>Reliable</p>
+			<P>Professional</p>
+			<P>Validated</p>
+			<P>Confidence</p>
+ 			<P>
+			<P>From these words, I abstracted the meaning and began to take it to a more visual level. </P>
+
+			<p>
+                            <img src="img/portfolio/qc2.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/qc01.png" class="img-responsive img-centered" alt="">
+                            <p>The four colored bars you see represent 4 arms colliding with eachother, they represent the idea of team work, unity and togetherness. A corner has been folded out to create the Q in Quantified Care. </p>
+                            <img src="img/portfolio/qc3.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/qc4.jpg" class="img-responsive img-centered" alt="">
+                            <ul class="list-inline item-details">
+                              
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Organize your life</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/o1a.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/o2a.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/o1b.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/o2b.jpg" class="img-responsive img-centered" alt="">
+                            <p>ORGANIZE YOUR LIFE is a set of playing cards with tips and tricks on how to sort out the chaotic mess in one's daily life. There are a total of 16 cards. On the front of each card there are icons that relate to the quotes on the back. The user can play a game of matching or organizing with the cards based on the icons. The cards can be sorted based on shapes or categories. </p>
+                            <img src="img/portfolio/o1.gif" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/o2b.gif" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/o3.gif" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/04.gif" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/o5.gif" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/o6.gif" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/o7.gif" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/o8.gif" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/o9.gif" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/o10.gif" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/o11.gif" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/o12.gif" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/o13.gif" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/o14.gif" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/o15.gif" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/o16.gif" class="img-responsive img-centered" alt="">
+                            
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>innovation right now: a 21st century guide</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/i.jpg" class="img-responsive img-centered" alt="">
+
+                            <img src="img/portfolio/i2.jpg" class="img-responsive img-centered" alt="">
+                            <p>The home page starts with interactive buttons that function as portals into each article. When the user hovers their mouse over the buttons/links, a photograph is revealed to show what the subject of the article is about.</p>
+
+                            <img src="img/portfolio/i3.jpg" class="img-responsive img-centered" alt="">
+                            <p>Once the user enters the article, "Who Made That?" They are presented with more buttons/links that allow the user to explore the series of substories within the article.</p>
+                            <img src="img/portfolio/i4.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/i5.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/i6.gif" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/i7.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/i8.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/i9.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/i10.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/i11.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/i12.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/i13.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/i14.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/i15.jpg" class="img-responsive img-centered" alt="">
+                             <img src="img/portfolio/i16.jpg" class="img-responsive img-centered" alt="">
+                              <img src="img/portfolio/i17.jpg" class="img-responsive img-centered" alt="">
+                               <img src="img/portfolio/i18.jpg" class="img-responsive img-centered" alt="">
+                               <img src="img/portfolio/i19.jpg" class="img-responsive img-centered" alt="">
+                          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                             <h2>Time Inc</h2>
+                            <hr class="star-primary">
+                            
+                            <p>Social amplify and video lightbox concepts produced for consumer brands and magazines at Time Inc.</p>
+                            <img src="img/portfolio/time.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/time1.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/time3.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/time4.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/time5.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/time6.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/time.gif" class="img-responsive img-centered" alt="">
+                            <ul class="list-inline item-details">
+                              
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>free your stuff</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/free.png" class="img-responsive img-centered" alt="">
+                            <p>Free Your Stuff is a mobile application designed for students to receive new belongings or give away their current belongings.</p>
+			<p> The application is built on the idea of a gift economy.</p>
+			<img src="img/portfolio/free1.png" class="img-responsive img-centered" alt="">
+			<img src="img/portfolio/free2.png" class="img-responsive img-centered" alt="">
+			<img src="img/portfolio/free3.gif" class="img-responsive img-centered" alt="">
+			<img src="img/portfolio/free4.jpg" class="img-responsive img-centered" alt="">
+			<img src="img/portfolio/free5.jpg" class="img-responsive img-centered" alt="">
+			<img src="img/portfolio/free6.gif" class="img-responsive img-centered" alt="">
+                            <ul class="list-inline item-details">
+                               
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Place iq</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/placeiq01.jpg" class="img-responsive img-centered" alt="">
+
+                            <img src="img/portfolio/placeiq.png" class="img-responsive img-centered" alt="">
+                            <p>Icons designed for PlaceIQ's presentation decks and website. Assortment of architecture and landscapes.</p>
+                            <ul class="list-inline item-details">
+                                
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>SPICES MIX FOR CELESTIAL SEASONING</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/spices.jpg" class="img-responsive img-centered" alt="">
+                            <p>The issue to address in this project was the preservation of spices along with promoting consumers to try new ones.</p>
+			<p>Here is a series of spices mix for Celestial Seasoning. Each spices mix features 6 - 8 different spices. The consumer can use each spice on its own or mix it according to the recipe provided. There are 3 different flavors, Cajun, Curry and Italian. The spices mix comes with cooking suggestions. Each mix provides one - three servings of seasoning, this allows for immediate use of the spices and prevents the spices from spoiling. Once the consumer has finished the spices, they can keep the recipe card as reference of the ingredients and serving suggestions for future uses.</p>
+			<img src="img/portfolio/spices1.jpg" class="img-responsive img-centered" alt="">
+			<img src="img/portfolio/spices2.jpg" class="img-responsive img-centered" alt="">
+			<img src="img/portfolio/spices3.jpg" class="img-responsive img-centered" alt="">
+			<img src="img/portfolio/spices4.jpg" class="img-responsive img-centered" alt="">
+			<img src="img/portfolio/spices5.jpg" class="img-responsive img-centered" alt="">
+			<img src="img/portfolio/spices6.jpg" class="img-responsive img-centered" alt="">
+			<img src="img/portfolio/spices7.jpg" class="img-responsive img-centered" alt="">
+                            
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                        <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>cl9ud</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/cloud.png" class="img-responsive img-centered" alt="">
+                            <p>CL9UD is a twin pack of tissues, it comes with 10 tissues per pack. The tissues are packed in a foldable compartment that is held together by a slit tab function. Once the user is finished with one pack, they can tear out the side of the empty carton and still have a pack that is convenient to carry. The packaging itself requires no glue at all. It's all held together by folds and tabs. It can be packed and easily transported in flat sheets and in huge quantities.</p>
+                                 <img src="img/portfolio/cloud1.jpg" class="img-responsive img-centered" alt="">
+                                 <img src="img/portfolio/cloud2.jpg" class="img-responsive img-centered" alt="">
+                                 <img src="img/portfolio/cloud3.jpg" class="img-responsive img-centered" alt="">
+                                 <img src="img/portfolio/cloud4.jpg" class="img-responsive img-centered" alt="">
+                                 <img src="img/portfolio/cloud5.jpg" class="img-responsive img-centered" alt="">
+                                 <img src="img/portfolio/cloud7.jpg" class="img-responsive img-centered" alt="">
+                                 <img src="img/portfolio/cloud8.jpg" class="img-responsive img-centered" alt="">
+                                 <img src="img/portfolio/cloud9.jpg" class="img-responsive img-centered" alt="">
+                                 <img src="img/portfolio/cloud10.jpg" class="img-responsive img-centered" alt="">
+                                 <img src="img/portfolio/cloud11.jpg" class="img-responsive img-centered" alt="">
+                                 <img src="img/portfolio/cloud12.jpg" class="img-responsive img-centered" alt="">
+                                 <img src="img/portfolio/cloud13.jpg" class="img-responsive img-centered" alt="">
+
+                            
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Magasin</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/magasin.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/magasin0.png" class="img-responsive img-centered" alt="">
+                            <p>Magasin is a Danish department store in Denmark. Aside from selling household products and apparel, they have a line of prepackaged food (MAD&VIN) for sale. After conducting research, I've noticed majority of the shoppers are females or tourists. Most of their premade foods are salads, sandwiches, wraps and pasta.</p>
+                             <img src="img/portfolio/magasin01.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/magasin02.png" class="img-responsive img-centered" alt="">
+                             <img src="img/portfolio/magasin03.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/magasin04.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/magasin05.png" class="img-responsive img-centered" alt="">
+                            <p>Sandwich packaging designed for Magasin.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>weekend highlights</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/calender7.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/calender5.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/calender4.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/calender8.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/calender9.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/calender10.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/calender11.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/calender12.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/calender13.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/calender14.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/calender15.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/calender16.jpg" class="img-responsive img-centered" alt="">
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>history of world in 100 objects</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/1001.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/1002.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/1003.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/1004.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/1005.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/1006.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/1007.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/1008.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/1009.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/10010.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/10011.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/10012.jpg" class="img-responsive img-centered" alt="">
+                        
+                         
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+
+           </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>denmark promotional guide</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/dk000.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/dk02.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/dk01.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/dkw.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/dk4.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/dk5.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/denmark2.jpg" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/denmark1.jpg" class="img-responsive img-centered" alt="">
+                            <p>Having lived in Denmark, I've grown quite fond of the country. I designed a guide that encourages people to visit Denmark. The pamphlet is a folded booklet that opens up into poster. Each " module " showcases reasons why people should check out Denmark and suggestions of things to do and places to see. It will be placed at a travel agency for people to browse through and see what possible destinations one should venture to. The user can take the booklet with them since it will be small and travel size friendly. In a sense, this print is designed as a promotional flyer but transformed into a visual poster for one's home.</p>
+                            
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+</body>
+
 </html>
